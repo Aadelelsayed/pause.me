@@ -42,6 +42,9 @@ namespace PauseMe
                 _CountDownTimer = 0;
                 tmrCountdown.Stop();
                 this.Close();
+
+                if(System.Media.SystemSounds.Asterisk != null)
+                    System.Media.SystemSounds.Asterisk.Play();
             }
         }
 
